@@ -1,0 +1,37 @@
+{
+  "PRODUCTS": [
+    {
+      "id": "bolsa-exemplo",
+      "name": "Nome da Peça",
+      "category": ["bolsas"],
+      "price": "R$ 00",
+      "imgs": ["assets/foto-principal.png", "assets/foto-2.png"],
+      "description": "Descrição da peça.",
+      "details": ["Material", "Fecho", "Aprox. 00 x 00 cm"],
+      "badge": ["novidade"]
+    }
+  ],
+  "CATEGORIES": [
+    { "id": "todos", "label": "Tudo" },
+    { "id": "bolsas", "label": "Bolsas" },
+    { "id": "roupas", "label": "Roupas" },
+    { "id": "dia-das-maes", "label": "Dia das Mães" },
+    { "id": "dia-dos-namorados", "label": "Dia dos Namorados" },
+    { "id": "copa", "label": "Copa" },
+    { "id": "casa", "label": "Casa" },
+    { "id": "lembrancinhas", "label": "Lembrancinhas" }
+  ],
+  "TESTIMONIALS": [
+    {
+      "name": "Nome do Cliente",
+      "location": "Cidade - UF",
+      "text": "Depoimento da cliente.",
+      "product": "Peça 1 | Peça 2"
+    }
+  ],
+  "PROCESS_STEPS": [
+    { "n": "01", "title": "Conversa", "text": "Descrição da etapa." },
+    { "n": "02", "title": "Tecendo", "text": "Descrição da etapa." },
+    { "n": "03", "title": "Acabamento", "text": "Descrição da etapa." }
+  ]
+}

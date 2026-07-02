@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Papillon Crochê — peças feitas à mão</title>
+  <meta name="description" content="Bolsas, roupas e presentes em crochê, tecidos um ponto de cada vez por Maria Fernanda Pilotto." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&family=Italianno&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="data.json" as="fetch" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* WhatsApp float */
+    .wa-float {
+      position: fixed; right: 22px; bottom: 22px; z-index: 90;
+      width: 54px; height: 54px; border-radius: 999px;
+      background: #25D366; color: #fff;
+      display: inline-flex; align-items: center; justify-content: center;
+      box-shadow: 0 12px 30px -10px rgba(37,211,102,0.6);
+      transition: transform 220ms ease;
+    }
+    .wa-float:hover { transform: translateY(-3px) scale(1.05); }
+    @media (max-width: 720px) { .wa-float { right: 16px; bottom: 16px; width: 48px; height: 48px; } }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="data.jsx"></script>
+  <script type="text/babel" src="components.jsx"></script>
+  <script type="text/babel" src="catalog.jsx"></script>
+  <script type="text/babel" src="sections.jsx"></script>
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
