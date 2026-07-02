@@ -1,0 +1,8 @@
+[build]
+  command = "printf '{\"whatsapp\":\"%s\",\"data_url\":\"%s\"}' \"$WHATSAPP\" \"$DATA_URL\" > config.json"
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to   = "/papillon_croche.html"
+  status = 200
