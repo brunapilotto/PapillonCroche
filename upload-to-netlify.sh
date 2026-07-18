@@ -6,7 +6,7 @@
 set -e
 
 echo "→ Subindo imagens para blob store 'images'..."
-for file in assets/*; do
+for file in products/*; do
   name=$(basename "$file")
   echo "  $name"
   netlify blobs:set images "$name" < "$file"
