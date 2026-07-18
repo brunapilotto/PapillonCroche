@@ -1,5 +1,5 @@
 [build]
-  command = "printf '{\"whatsapp\":\"%s\",\"data_url\":\"/.netlify/blobs/data/data.json\"}' \"$WHATSAPP\" > config.json"
+  command = "printf '{\"whatsapp\":\"%s\",\"data_url\":\"/catalog.json\"}' \"$WHATSAPP\" > config.json"
   publish = "."
 
 [[redirects]]

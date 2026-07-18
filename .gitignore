@@ -3,3 +3,6 @@ products
 data.json
 data.netlify.json
 config.json
+
+# Local Netlify folder
+.netlify

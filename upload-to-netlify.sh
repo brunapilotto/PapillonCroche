@@ -9,7 +9,7 @@ echo "→ Subindo imagens para blob store 'images'..."
 for file in products/*; do
   name=$(basename "$file")
   echo "  $name"
-  netlify blobs:set images "$name" < "$file"
+  netlify blobs:set images "$name" --input "$file"
 done
 
 echo "→ Subindo data.json (com URLs de blob) para store 'data'..."
