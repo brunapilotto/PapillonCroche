@@ -7,7 +7,7 @@ const CONTENT_TYPES = {
   json: 'application/json',
 };
 
-export default async (request, context) => {
+export default async (request) => {
   const url = new URL(request.url);
   const [, prefix, ...rest] = url.pathname.split('/');
 
@@ -15,7 +15,7 @@ export default async (request, context) => {
   if (prefix === 'images') {
     store = getStore('images');
     key = rest.join('/');
-  } else if (prefix === 'catalog.json') {
+  } else if (url.pathname === '/catalog.json') {
     store = getStore('data');
     key = 'data.json';
   } else {
